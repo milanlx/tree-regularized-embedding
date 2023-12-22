@@ -15,8 +15,7 @@ We employ the transformation within each mini-batch to make it scalable for larg
 
 ```python 
 for _, (x, y) in enumerate(data_loader):
-    # in-batch transformation
-    x = transform_batch(x)
+    x = transform_batch(x)    # in-batch transformation
     y_pred = model(x)
     ...
 ```
