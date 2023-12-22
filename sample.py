@@ -1,13 +1,10 @@
 import os 
 import sys 
-import time
-
 import torch 
 import torchvision.transforms as transforms 
 from torch.utils.data import Dataset, DataLoader
 
 sys.path.append('src/')
-
 from train_tree import *
 from tree_embedding import TreeToVector, TreeToVectorConverter, TreeToToken, TreeToTokenConverter
 
@@ -27,10 +24,11 @@ class ClassifierDataset(Dataset):
 
 
 if __name__ == "__main__":
-    ## synthetic data 
+    ## generate synthetic data 
     n_sample, n_dim = 500, 50
     X_train, Y_train = np.random.normal(size=(n_sample, n_dim)), np.random.randint(2, size=n_sample)
     X_valid, Y_valid = np.random.normal(size=(n_sample, n_dim)), np.random.randint(2, size=n_sample)
+
 
     ## train xgboost model 
     train_data = convert_to_DMatrix(X_train, Y_train)
