@@ -42,5 +42,3 @@ def evaluate_model(xgb_model, test_data):
     y_true = test_data.get_label()
     auc = roc_auc_score(y_true, y_pred) 
     return auc 
-
-
