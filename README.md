@@ -23,6 +23,6 @@ for _, (x, y) in enumerate(data_loader):
 Essentially, it makes a trade-off between time and space complexity, and scales well with respect to the number of tree ensembles. 
 
 <p align="center">
-<img src="assets/t2t-implementations.png" width="800px"/>  
+<img src="assets/t2t-implementations.png" width="500px"/>  
 <br>
 </p>
