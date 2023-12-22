@@ -13,7 +13,7 @@ convert tree to tokens
 ## Implementation 
 We employ the transformation within each mini-batch to make it scalable for large tabular datasets with hundreds of columns and million of rows. For example, 
 
-```javascript I'm A tab
+```python 
 console.log('Code Tab A');
 ```
 
