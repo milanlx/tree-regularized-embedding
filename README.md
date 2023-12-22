@@ -15,10 +15,12 @@ We employ the transformation within each mini-batch to make it scalable for larg
 
 ```python 
 for _, (x, y) in enumerate(data_loader):
-    x = transform_batch(x)    # in-batch transformation
+    x = transform_batch(x) 
     y_pred = model(x)
     ...
 ```
+
+Essentially, it makes a trade-off between time and space complexity, and scales well with respect to the number of tree ensembles. 
 
 <p align="center">
 <img src="assets/t2t-implementation.png" width="800px"/>  
