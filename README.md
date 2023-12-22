@@ -14,7 +14,9 @@ convert tree to tokens
 We employ the transformation within each mini-batch to make it scalable for large tabular datasets with hundreds of columns and million of rows. For example, 
 
 ```python 
-console.log('Code Tab A');
+for _, (x, y) in enumerate(data_loader):
+    # in-batch transformation
+    x = transform_batch(x)
 ```
 
 <p align="center">
