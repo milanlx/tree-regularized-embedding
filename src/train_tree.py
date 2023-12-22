@@ -17,11 +17,13 @@ xgb_params = {
     'subsample': '0.8',
     'gamma': '4',
     'min_child_weight': '30',
-    'verbosity': '2'}
+    'verbosity': '2'
+}
 
 xgb_option = {
     'num_boost_round': 500,
-    'early_stopping_round': 10}
+    'early_stopping_round': 10
+}
 
 
 def convert_to_DMatrix(X_data, Y_data):
@@ -29,11 +31,13 @@ def convert_to_DMatrix(X_data, Y_data):
 
 
 def train_model(train_data, valid_data, xgb_params, xgb_option):
-    xgb_model = xgb.train(params=xgb_params, 
-                          dtrain=train_data, 
-                          evals=[(valid_data, 'valid')],
-                          early_stopping_rounds=xgb_option['early_stopping_round'],
-                          num_boost_round=xgb_option['num_boost_round'])
+    xgb_model = xgb.train(
+        params=xgb_params, 
+        dtrain=train_data, 
+        evals=[(valid_data, 'valid')],
+        early_stopping_rounds=xgb_option['early_stopping_round'],
+        num_boost_round=xgb_option['num_boost_round']
+    )
     return xgb_model
 
 

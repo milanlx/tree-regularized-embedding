@@ -2,8 +2,7 @@ import torch
 import xgboost as xgb
 
 
-"""Tree to Vector
-"""
+# Tree to Vector
 class TreeToVector: 
     def __init__(self, xgbTree, dtype=torch.float): 
         self.xgbTree = xgbTree 
@@ -16,10 +15,7 @@ class TreeToVector:
     def tree_encoder(self, tensor): 
         # fill nan with -1 
         tensor = torch.nan_to_num(tensor, nan=-1.0)
-        output = self.postprocessing(
-                     tensor, 
-                     self.xgbTree.multiply_matrix, 
-                     self.xgbTree.offset_vector)
+        output = self.postprocessing(tensor, self.xgbTree.multiply_matrix, self.xgbTree.offset_vector)
         return output 
         
     def postprocessing(self, x, multiply_matrix, offset_vector): 
@@ -95,8 +91,7 @@ class TreeToVectorConverter:
         return multiply_matrix, offset_vector
 
     
-"""Tree to Token
-"""
+# Tree to Token
 class TreeToToken: 
     def __init__(self, xgbTree, dtype=torch.float): 
         self.xgbTree = xgbTree 
@@ -198,8 +193,7 @@ class TreeToTokenConverter:
         return multiply_matrix, offset_vector, padding_vector 
     
     
-"""helper function 
-"""
+# helper function 
 def extract_trees(xgb_model):
     """ extract trees from XGB for binary classification cases
     Input: XGB model 
