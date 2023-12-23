@@ -6,7 +6,7 @@ This repository is the official implementation of [Tree-Regularized Tabular Embe
 <img src="assets/t2t.png" width="800px"/>  
 <br>
 <em>
-convert tree to tokens
+An overview of T2T, where the embeddings are generated through level-order traversal over tree with padding 
 </em>
 </p>
 
@@ -21,7 +21,7 @@ for _, (x, y) in enumerate(data_loader):
     ...
 ```
 
-Essentially, it makes a trade-off between time and space complexity, and scales well with respect to the number of tree ensembles. 
+Essentially, it makes a trade-off between time and space complexity, and scales well with respect to the number of tree ensembles
 
 <p align="center">
 <img src="assets/t2t-implementations.png" width="500px"/>  
