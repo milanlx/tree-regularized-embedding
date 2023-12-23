@@ -10,6 +10,7 @@ convert tree to tokens
 </em>
 </p>
 
+
 ## Implementation 
 We employ the transformation within each mini-batch to make it scalable for large tabular datasets with hundreds of columns and million of rows. For example, 
 
@@ -25,4 +26,11 @@ Essentially, it makes a trade-off between time and space complexity, and scales 
 <p align="center">
 <img src="assets/t2t-implementations.png" width="500px"/>  
 <br>
+<em>
+A comparison of forward-pass wall time between T2V with MLP and vanilla MLP.
+</em>
 </p>
+
+
+## Code 
+A sample execuation is provided in *sample.py*, where the two transformations are specified by 'tree-to-vector' and 'tree-to-token' respectively. 
