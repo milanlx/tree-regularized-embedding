@@ -28,7 +28,7 @@ if __name__ == "__main__":
     n_sample, n_dim = 500, 50
     X_train, Y_train = np.random.normal(size=(n_sample, n_dim)), np.random.randint(2, size=n_sample)
     X_valid, Y_valid = np.random.normal(size=(n_sample, n_dim)), np.random.randint(2, size=n_sample)
-
+    
 
     ## train xgboost model 
     train_data = convert_to_DMatrix(X_train, Y_train)
