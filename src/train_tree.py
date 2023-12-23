@@ -8,15 +8,7 @@ from sklearn.metrics import roc_auc_score
 xgb_params = {
     'eval_metric': 'auc',
     'objective': 'binary:logistic',
-    'max_depth': '10',
-    'eta': '0.05',
-    'colsample_bylevel': '0.8',
-    'colsample_bytree': '0.8',
-    'alpha': '0.01', 
     'tree_method': 'approx', 
-    'subsample': '0.8',
-    'gamma': '4',
-    'min_child_weight': '30',
     'verbosity': '2'
 }
 
