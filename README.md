@@ -33,4 +33,4 @@ A comparison of forward-pass wall time between T2V with MLP and vanilla MLP.
 
 
 ## Code 
-A sample execuation is provided in *sample.py*, where the two transformations are specified by 'tree-to-vector' and 'tree-to-token' respectively. 
+A sample execuation is provided in `sample.py`, where the two transformations are specified by 'tree-to-vector' and 'tree-to-token' respectively. 
