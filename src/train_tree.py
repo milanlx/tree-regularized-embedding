@@ -13,7 +13,7 @@ xgb_params = {
 }
 
 xgb_option = {
-    'num_boost_round': 500,
+    'num_boost_round': 50,
     'early_stopping_round': 10
 }
 
