@@ -1,6 +1,6 @@
 # Tree-Regularized Tabular Embeddings
 
-This repository is the official implementation of [Tree-Regularized Tabular Embeddings](https://openreview.net/forum?id=dQLDxIPsU4), which utilizes the structure of pretrained tree ensembles to transform raw variables into a single vector (T2V), or an array of tokens (T2T). In essence,the transformed representations can be directly consumed by advanced tabular NN models with multi-layered perception (MLP) or multi-head attention (MHA) as building blocks. 
+This repository is the official implementation of [Tree-Regularized Tabular Embeddings](http://arxiv.org/abs/2403.00963), which utilizes the structure of pretrained tree ensembles to transform raw variables into a single vector (T2V), or an array of tokens (T2T). In essence,the transformed representations can be directly consumed by advanced tabular NN models with multi-layered perception (MLP) or multi-head attention (MHA) as building blocks. 
 
 <p align="center">
 <img src="assets/t2t.png" width="800px"/>  
